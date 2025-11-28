@@ -12,225 +12,249 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <header class="header">
-        <div class="header-inner">
-            <div class="brand">
-                <div class="logo">Edu<span>Connect</span></div>
-            </div>
+    <!-- ========================= -->
+    <!-- NAVBAR (Full-width Split SaaS style) -->
+    <!-- ========================= -->
+    <header class="header" role="banner">
+        <div class="nav-container header-inner">
+            <!-- LEFT: Brand -->
+            <a href="#home" class="nav-logo" aria-label="EduConnect Home">Edu<span>Connect</span></a>
 
-            <nav class="nav" id="nav">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#courses">Courses</a>
-                <a class="nav-link" href="#testimonials">Testimonials</a>
+            <!-- CENTER: Navigation -->
+            <nav class="nav-links" role="navigation" aria-label="Primary navigation">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
 
-            <div class="controls">
-                <button id="themeToggle" class="control-btn" aria-label="Toggle theme">🌙</button>
-                <button id="mobileToggle" class="control-btn mobile-only" aria-label="Open menu">☰</button>
+            <!-- RIGHT: Auth + Toggles -->
+            <div class="nav-right" role="group" aria-label="User controls">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="register.html" class="btn-register">Register</a>
+
+                <!-- Theme toggle -->
+                <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle theme">
+                    <span class="moon">🌙</span><span class="sun">☀️</span>
+                </button>
+
+                <!-- Mobile toggle -->
+                <button id="mobileToggle" class="mobile-toggle mobile-only" aria-expanded="false"
+                    aria-controls="mobileMenu" aria-label="Open menu">☰</button>
             </div>
         </div>
 
-        <!-- Mobile menu (hidden by default) -->
+        <!-- MOBILE MENU -->
         <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
             <a href="#home" class="mobile-link">Home</a>
             <a href="#about" class="mobile-link">About</a>
             <a href="#courses" class="mobile-link">Courses</a>
             <a href="#testimonials" class="mobile-link">Testimonials</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="login.html" class="mobile-auth">Login</a>
+            <a href="register.html" class="mobile-auth">Register</a>
         </div>
     </header>
 
     <!-- HERO -->
-    <section id="home" class="hero">
-        <div class="hero-inner">
-            <div class="hero-left">
-                <h1 class="hero-title">Welcome to <span class="accent">EduConnect</span></h1>
-                <p class="hero-sub">Empowering learners with world-class web development and design courses.</p>
-                <div class="hero-ctas">
-                    <a href="#courses" class="btn btn-primary" id="exploreBtn">Explore Courses</a>
-                    <a href="#about" class="btn btn-outline" id="learnBtn">Learn More</a>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-inner">
+                <div class="hero-left">
+                    <h1 class="hero-title">Welcome to <span class="accent">EduConnect</span></h1>
+                    <p class="hero-sub">Empowering learners with world-class web development and design courses.</p>
+                    <div class="hero-ctas">
+                        <a href="#courses" class="btn btn-primary" id="exploreBtn">Explore Courses</a>
+                        <a href="#about" class="btn btn-outline" id="learnBtn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <img class="hero-illustration" src="assets/images/hero_main_image.png" alt="Learning illustration"
+                        loading="lazy">
                 </div>
             </div>
+        </section>
 
-            <div class="hero-right">
-                <!-- decorative illustration -->
-                <img class="hero-illustration" src="assets/images/hero_main_image.png" alt="Learning illustration"
-                    loading="lazy">
+        <!-- ABOUT -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-sub">We build accessible, practical courses for students and professionals — from
+                    front-end engineering to UI/UX and backend systems.</p>
+
+                <div class="team">
+                    <article class="team-card">
+                        <img src="assets/images/personal_image.png" alt="Yousef Ahmed" loading="lazy">
+                        <h3>Yousef Ahmed</h3>
+                        <p class="muted">UI/UX Designer</p>
+                    </article>
+
+                    <article class="team-card">
+                        <img src="assets/images/personal_image.png" alt="Ali Mohamed" loading="lazy">
+                        <h3>Ali Mohamed</h3>
+                        <p class="muted">Front-End Developer</p>
+                    </article>
+
+                    <article class="team-card">
+                        <img src="assets/images/personal_image.png" alt="Ziad Salem" loading="lazy">
+                        <h3>Ziad Salem</h3>
+                        <p class="muted">Front-End Developer</p>
+                    </article>
+
+                    <article class="team-card">
+                        <img src="assets/images/personal_image.png" alt="Momen Khudair" loading="lazy">
+                        <h3>Momen Khudair</h3>
+                        <p class="muted">Back-End Developer</p>
+                    </article>
+
+                    <article class="team-card">
+                        <img src="assets/images/personal_image.png" alt="Abdelrahman Mohamed" loading="lazy">
+                        <h3>Abdelrahman Mohamed</h3>
+                        <p class="muted">Back-End Developer</p>
+                    </article>
+
+                    <article class="team-card">
+                        <img src="assets/images/personal_image.png" alt="Abdollah Mohamed" loading="lazy">
+                        <h3>Abdollah Mohamed</h3>
+                        <p class="muted">AI Developer</p>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="about section">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <p class="section-sub">We build accessible, practical courses for students and professionals — from
-                front-end engineering to UI/UX and backend systems.</p>
+        <!-- COURSES -->
+        <section id="courses" class="courses section">
+            <div class="container">
+                <h2 class="section-title">Our Courses</h2>
+                <p class="section-sub">Choose a path — pick a skill. Filter the list to quickly find what you're after.
+                </p>
 
-            <div class="team">
-                <article class="team-card">
-                    <img src="assets/images/personal_image.png" alt=" Yousef Ahmed " loading="lazy">
-                    <h3>Yousef Ahmed</h3>
-                    <p class="muted">UI/UX Designer</p>
-                </article>
+                <div class="filter-bar" role="toolbar" aria-label="Course filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Front-End</button>
+                    <button class="filter-btn" data-filter="backend">Back-End</button>
+                    <button class="filter-btn" data-filter="uiux">UI/UX</button>
+                    <button class="filter-btn" data-filter="data">Data</button>
+                </div>
 
-                <article class="team-card">
-                    <img src="assets/images/personal_image.png" alt=" Ali Mohamed " loading="lazy">
-                    <h3> Ali Mohamed </h3>
-                    <p class="muted">Front-End Developer</p>
-                </article>
+                <div class="courses-viewport">
+                    <ul id="courseList" class="course-list" aria-live="polite">
+                        <li class="course-card" data-category="frontend">
+                            <img src="assets/images/Web Development Bootcamp.png" alt="Web Development Bootcamp"
+                                loading="lazy">
+                            <div class="course-body">
+                                <h3>Web Development Bootcamp</h3>
+                                <p>HTML, CSS, JS and modern React projects.</p>
+                                <div class="course-footer">
+                                    <span class="price">$39</span>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                        </li>
 
-                <article class="team-card">
-                    <img src="assets/images/personal_image.png" alt=" Ziad Salem " loading="lazy">
-                    <h3> Ziad Salem </h3>
-                    <p class="muted">Front-End Developer</p>
-                </article>
+                        <li class="course-card" data-category="data">
+                            <img src="assets/images/Data science mastery.png" alt="Data Science Mastery" loading="lazy">
+                            <div class="course-body">
+                                <h3>Data Science Mastery</h3>
+                                <p>Python, ML foundations and practical pipelines.</p>
+                                <div class="course-footer">
+                                    <span class="price">$59</span>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                        </li>
 
-                <article class="team-card">
-                    <img src="assets/images/personal_image.png" alt=" Momen Khudair" loading="lazy">
-                    <h3> Momen Khudair </h3>
-                    <p class="muted">Back-End Developer</p>
-                </article>
+                        <li class="course-card" data-category="uiux">
+                            <img src="assets/images/UI and UX Essentials.png" alt="UI/UX Essentials" loading="lazy">
+                            <div class="course-body">
+                                <h3>UI/UX Essentials</h3>
+                                <p>Design systems, prototyping and usability testing.</p>
+                                <div class="course-footer">
+                                    <span class="price">$29</span>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                        </li>
 
-                <article class="team-card">
-                    <img src="assets/images/personal_image.png" alt=" Abdelrahman Mohamed " loading="lazy">
-                    <h3> Abdelrahman Mohamed </h3>
-                    <p class="muted">Back-End Developer</p>
-                </article>
+                        <li class="course-card" data-category="backend">
+                            <img src="assets/images/Backend Fundementals.png" alt="Backend Development" loading="lazy">
+                            <div class="course-body">
+                                <h3>Backend Fundamentals</h3>
+                                <p>APIs, databases and scalable server architecture.</p>
+                                <div class="course-footer">
+                                    <span class="price">$49</span>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                        </li>
 
+                        <li class="course-card" data-category="frontend">
+                            <img src="assets/images/Advanced Front-End.png" alt="Advanced Frontend" loading="lazy">
+                            <div class="course-body">
+                                <h3>Advanced Front-End</h3>
+                                <p>Performance, accessibility and architecture.</p>
+                                <div class="course-footer">
+                                    <span class="price">$69</span>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                        </li>
 
-                <article class="team-card">
-                    <img src="assets/images/personal_image.png" alt=" Abdollah Mohamed " loading="lazy">
-                    <h3> Abdollah Mohamed </h3>
-                    <p class="muted"> AI Developer</p>
-                </article>
+                        <li class="course-card" data-category="uiux">
+                            <img src="assets/images/Product design.png" alt="Product Design" loading="lazy">
+                            <div class="course-body">
+                                <h3>Product Design</h3>
+                                <p>Research-led design, roadmaps and collaboration.</p>
+                                <div class="course-footer">
+                                    <span class="price">$79</span>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="courses-nav">
+                    <a href="#" class="nav-pill">Browse all courses</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- COURSES -->
-    <section id="courses" class="courses section">
-        <div class="container">
-            <h2 class="section-title">Our Courses</h2>
-            <p class="section-sub">Choose a path — pick a skill. Filter the list to quickly find what you're after.</p>
-
-            <div class="filter-bar" role="toolbar" aria-label="Course filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="frontend">Front-End</button>
-                <button class="filter-btn" data-filter="backend">Back-End</button>
-                <button class="filter-btn" data-filter="uiux">UI/UX</button>
-                <button class="filter-btn" data-filter="data">Data</button>
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" class="testimonials section">
+            <div class="container">
+                <h2 class="section-title">What Our Students Say</h2>
+                <div class="test-viewport">
+                    <ul class="test-list" id="testList">
+                        <li class="test-card">
+                            <blockquote>“EduConnect transformed my career — practical projects and supportive mentors.”
+                            </blockquote>
+                            <cite>— Sara, Frontend Developer</cite>
+                        </li>
+                        <li class="test-card">
+                            <blockquote>“Clear course paths and real-world instruction. Highly recommended.”
+                            </blockquote>
+                            <cite>— Omar, Data Scientist</cite>
+                        </li>
+                        <li class="test-card">
+                            <blockquote>“I learned design thinking in a week and shipped a product.”</blockquote>
+                            <cite>— Lina, Product Designer</cite>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </section>
 
-            <!-- Responsive: grid on large, scroll-snap on small -->
-            <div class="courses-viewport">
-                <ul id="courseList" class="course-list" aria-live="polite">
-                    <!-- 6 courses -->
-                    <li class="course-card" data-category="frontend">
-                        <img src="assets/images/Web Development Bootcamp.png" alt="Web Development Bootcamp"
-                            loading="lazy">
-                        <div class="course-body">
-                            <h3>Web Development Bootcamp</h3>
-                            <p>HTML, CSS, JS and modern React projects.</p>
-                            <div class="course-footer">
-                                <span class="price">$39</span>
-                                <a href="#" class="read-more">Read more →</a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="course-card" data-category="data">
-                        <img src="assets/images/course-data.jpg" alt="Data Science Mastery" loading="lazy">
-                        <div class="course-body">
-                            <h3>Data Science Mastery</h3>
-                            <p>Python, ML foundations and practical pipelines.</p>
-                            <div class="course-footer">
-                                <span class="price">$59</span>
-                                <a href="#" class="read-more">Read more →</a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="course-card" data-category="uiux">
-                        <img src="assets/images/course-uiux.jpg" alt="UI/UX Essentials" loading="lazy">
-                        <div class="course-body">
-                            <h3>UI/UX Essentials</h3>
-                            <p>Design systems, prototyping and usability testing.</p>
-                            <div class="course-footer">
-                                <span class="price">$29</span>
-                                <a href="#" class="read-more">Read more →</a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="course-card" data-category="backend">
-                        <img src="assets/images/Backend Fundementals.png" alt="Backend Development" loading="lazy">
-                        <div class="course-body">
-                            <h3>Backend Fundamentals</h3>
-                            <p>APIs, databases and scalable server architecture.</p>
-                            <div class="course-footer">
-                                <span class="price">$49</span>
-                                <a href="#" class="read-more">Read more →</a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="course-card" data-category="frontend">
-                        <img src="assets/images/Advanced Front-End.png" alt="Advanced Frontend" loading="lazy">
-                        <div class="course-body">
-                            <h3>Advanced Front-End</h3>
-                            <p>Performance, accessibility and architecture.</p>
-                            <div class="course-footer">
-                                <span class="price">$69</span>
-                                <a href="#" class="read-more">Read more →</a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="course-card" data-category="uiux">
-                        <img src="assets/images/course-product-design.jpg" alt="Product Design" loading="lazy">
-                        <div class="course-body">
-                            <h3>Product Design</h3>
-                            <p>Research-led design, roadmaps and collaboration.</p>
-                            <div class="course-footer">
-                                <span class="price">$79</span>
-                                <a href="#" class="read-more">Read more →</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+        <!-- CONTACT -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-sub">Have questions? Reach out to our support at <a
+                        href="mailto:support@educonnect.com">support@educonnect.com</a>.</p>
             </div>
-
-            <div class="courses-nav">
-                <a href="#" class="nav-pill">Browse all courses</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="testimonials section">
-        <div class="container">
-            <h2 class="section-title">What Our Students Say</h2>
-            <div class="test-viewport">
-                <ul class="test-list" id="testList">
-                    <li class="test-card">
-                        <blockquote>“EduConnect transformed my career — practical projects and supportive mentors.”
-                        </blockquote>
-                        <cite>— Sara, Frontend Developer</cite>
-                    </li>
-                    <li class="test-card">
-                        <blockquote>“Clear course paths and real-world instruction. Highly recommended.”</blockquote>
-                        <cite>— Omar, Data Scientist</cite>
-                    </li>
-                    <li class="test-card">
-                        <blockquote>“I learned design thinking in a week and shipped a product.”</blockquote>
-                        <cite>— Lina, Product Designer</cite>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
