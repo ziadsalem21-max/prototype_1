@@ -1,0 +1,7 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#F5F3FF"/>
+  <circle cx="100" cy="100" r="40" fill="#9C7CDA"/>
+  <path d="M80 80L120 80L120 120L80 120Z" fill="#B39BE6"/>
+  <circle cx="100" cy="100" r="20" fill="white"/>
+  <text x="100" y="170" font-family="Arial" font-size="14" fill="#6B7280" text-anchor="middle">Data Science</text>
+</svg>

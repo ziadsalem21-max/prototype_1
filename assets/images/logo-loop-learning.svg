@@ -1,0 +1,27 @@
+<svg width="250" height="80" viewBox="0 0 250 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Purple Gradient Background with Rounded Corners -->
+  <rect width="250" height="80" rx="12" fill="url(#purpleGradient)"/>
+  
+  <!-- Decorative Circle Elements -->
+  <circle cx="40" cy="40" r="24" fill="white" fill-opacity="0.15"/>
+  <circle cx="210" cy="40" r="18" fill="white" fill-opacity="0.1"/>
+  
+  <!-- Logo Text -->
+  <text x="125" y="42" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="800" fill="white" text-anchor="middle" dominant-baseline="middle">
+    Loop Learning
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="125" y="62" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="white" fill-opacity="0.8" text-anchor="middle" dominant-baseline="middle">
+    Modern Online Education
+  </text>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C7CDA" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#7A5DC9" />
+    </linearGradient>
+  </defs>
+</svg>
